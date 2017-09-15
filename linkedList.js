@@ -13,6 +13,10 @@ function linkedListGenerator(){
   //   current = 0;
   //   next = current++;
   // }
+  
+  function get() {
+    // body ..
+  }
 
   function getHead(){
     // body...
@@ -53,6 +57,7 @@ function linkedListGenerator(){
 
 
   return {
+    get: get,
     getHead: getHead,
     getTail: getTail,
     removeNumber: removeNumber,
