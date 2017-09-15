@@ -9,17 +9,19 @@ function linkedListGenerator(){
   var length = 0;
   var head = null;
 
-  // function state(){
-  //   current = 0;
-  //   next = current++;
-  // }
-  
+    function getHead(){
+      if (head === null){
+        return head;
+      }
+  }
+
+
   function get() {
     // body ..
   }
 
-  function getHead(){
-    // body...
+  function insert(){
+    // body ..
   }
 
 
@@ -58,6 +60,7 @@ function linkedListGenerator(){
 
   return {
     get: get,
+    insert: insert,
     getHead: getHead,
     getTail: getTail,
     removeNumber: removeNumber,
