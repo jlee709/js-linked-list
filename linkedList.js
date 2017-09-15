@@ -15,7 +15,7 @@ function linkedListGenerator(){
         return head;
   }
 
-// what is being reference 
+// what is being referenced-
 function add(value){
   var node = {
     value: value,
@@ -32,9 +32,19 @@ function add(value){
   return node;
 }
 
-  function get() {
-    // body ..
+  function get(index) {
+    var node = head;
+    var current = 0;
+    while(current < index){
+      if (node.next === null){
+        return false;
+      }
+      node = node.next; 
+      current++;
+    } 
+    return node;
   }
+
 
   function insert(){
     // body ..
