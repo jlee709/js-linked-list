@@ -8,7 +8,7 @@ function linkedListGenerator(){
   this.head = null;
   var length = 0;
   var head = null;
-
+  var tail = null;
     function getHead(){
       if (head === null){
         return head;
@@ -27,10 +27,8 @@ function linkedListGenerator(){
 
 
   function getTail(){
-    // body...
+    return head;
   }
-
-
 
 
   function remove() {
@@ -40,10 +38,13 @@ function linkedListGenerator(){
 
 
   function add(value){
-    // body...
+    var node = {
+      value: value,
+      next: null
+   }; return node;
+
+
   }
-
-
 
 
   function getNumber(number){
@@ -72,38 +73,3 @@ function linkedListGenerator(){
 
   };
 }
-
-
-
-
-
-
-
-  // function getHead(){
-  //   var linkedList = {
-  //     value: 'Ready Player One',
-  //     next: {
-  //       value: '1982',
-  //       next: {
-  //         value: 'Neuromancer',
-  //         next: {
-  //           value: 'Snow Crash',
-  //           next: null
-  //         }
-  //       }
-  //     }
-  //   };
-  //   return head[value];
-  // }
-
-  // function getTail(){
-  //   value:  'Snow Crash';
-  //   next: null;
-  // }
-
-
-    
-  //   return {
-  //     getHead: getHead,
-  //     getTail: getTail
-  //   };
