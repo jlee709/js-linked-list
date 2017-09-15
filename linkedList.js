@@ -5,16 +5,32 @@
  */
 
 function linkedListGenerator(){
-  this.head = null;
+  // this.head = null;
   var length = 0;
   var head = null;
   var tail = null;
+
+
     function getHead(){
-      if (head === null){
         return head;
-      }
   }
 
+// what is being reference 
+function add(value){
+  var node = {
+    value: value,
+    next: null
+  }; 
+  
+  if(head === null) {
+    head = node;
+    tail = node;
+  }else{
+    tail.next = node;
+    tail = node;
+  }
+  return node;
+}
 
   function get() {
     // body ..
@@ -27,23 +43,12 @@ function linkedListGenerator(){
 
 
   function getTail(){
-    return head;
+    return tail;
   }
 
 
   function remove() {
     // body...
-  }
-
-
-
-  function add(value){
-    var node = {
-      value: value,
-      next: null
-   }; return node;
-
-
   }
 
 
